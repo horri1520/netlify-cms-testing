@@ -11,8 +11,16 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
+      }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdowns`, // ⇠markdownsにしてください。
+        path: `${__dirname}/content/post`, // ⇠ここにさっき作ったフォルダの場所記載
+      }
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
