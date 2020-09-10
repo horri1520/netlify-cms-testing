@@ -11,7 +11,7 @@ collections:
     label: "Post"
     folder: "content/post"
     create: true
-    extension: 'html'
+    extension: 'md'
     slug: '{{fields.slug}}'
     fields:
       - {label: 'Slug', name: 'slug', widget: 'string'}
