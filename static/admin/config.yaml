@@ -7,12 +7,11 @@ public_folder: "/images/uploaded"
 locale: "ja"
 
 collections:
-  - name: 'post'
+  - name: "post"
     label: "Post"
     folder: "content/post"
     create: true
     extension: 'json'
-    # slug: '{{fields.slug}}'
     fields:
       - {label: "タイトル", name: "title", widget: "string"}
       - {label: "日時", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
